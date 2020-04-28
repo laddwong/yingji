@@ -79,7 +79,7 @@ export default {
 				{
 					id: '11',
 					icon: 'tv-o',
-					to: '#',
+					to: '/discover/course',
 					name: '摄影教程'
 				},
 				{

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="fllow-page">
 		<card :cardData="cardData" />
 		<card :cardData="cardData" />
 		<card :cardData="cardData" />
@@ -7,6 +7,7 @@
 		<card :cardData="cardData" />
 	</div>
 </template>
+
 <script>
 import Card from '@/components/Card'
 export default {
@@ -17,6 +18,7 @@ export default {
 	data () {
 		return {
 			cardData: {
+				id: '001',
 				avatar: require('@/assets/avatar01.jpg'),
 				username: 'Superuser',
 				mainImg: require('@/assets/mainImg01.jpg'),
@@ -29,3 +31,7 @@ export default {
 	}
 }
 </script>
+
+<style scoped>
+
+</style>

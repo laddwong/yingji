@@ -1,18 +1,20 @@
 <template>
   <div class="message">
-    <img :src="data.avatar" class="avatar">
+    <img :src="avatar" class="avatar">
     <div class="content">
-      <p class="username">{{ data.username }}</p>
-      <p class="content">{{ data.content }}</p>
+      <p class="username">{{ username }}</p>
+      <p class="content">{{ message }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Comment',
+  name: 'Message',
   props: {
-    data: { type: Object }
+    avatar: { type: String },
+    username: { type: String },
+    message: { type: String }
   }
 }
 </script>

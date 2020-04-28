@@ -1,22 +1,34 @@
 <template>
 	<div style="position: relative;">
+		<!-- 顶部导航 -->
 		<div class="header-container">
+			<!-- 标签列表 -->
 			<div class="tag-list">
 				<ul>
 					<li v-for="(tag, index) in tags" :key="index">
-						<span :class="{'tag-active': index === 0}">{{tag}}</span>
+						<span
+							@click="handleTag(index)"
+							:class="{'tag-active': index === activeTag}">
+							{{tag}}
+						</span>
 					</li>
 				</ul>
 			</div>
+			<!-- 显示模式控制 -->
 			<div class="display-mode">
 				<van-icon name="apps-o" @click="activeMode = 'app'" :class="{'active-mode': activeMode === 'app'}"></van-icon>
 				<van-icon name="bars" @click="activeMode = 'list'" :class="{'active-mode': activeMode === 'list'}"></van-icon>
 			</div>
 		</div>
+		<!-- 内容 -->
 		<div class="content-container">
-			<card :cardData="cardData" />
-			<card :cardData="cardData" />
-			<card :cardData="cardData" />
+			<!-- 图文显示模式 -->
+			<div>
+				<card :cardData="cardData" />
+				<card :cardData="cardData" />
+				<card :cardData="cardData" />
+			</div>
+			<!-- 照片墙模式 -->
 		</div>
 	</div>
 </template>
@@ -40,7 +52,14 @@ export default {
 				time: Date.now()
 			},
 			tags: ['热门', '人像', '自然景观', '壁纸', '人像', '自然景观', '壁纸', '人像', '自然景观', '壁纸', '人像', '自然景观', '壁纸'],
-			activeMode: 'list'
+			activeMode: 'list',
+			activeTag: 0
+		}
+	},
+	methods: {
+		handleTag(index) {
+			// 选择标签
+			this.activeTag = index
 		}
 	}
 }

@@ -5,7 +5,7 @@
 - 正在进行：完成各按键功能
 
 ## 预览
-![image](https://raw.githubusercontent.com/laddwong/yingji/master/src/assets/GIF%20base.gif)
+![image](https://github.com/laddwong/yingji/raw/master/src/assets/GIF_base.gif)
 
 ## Project setup
 ```

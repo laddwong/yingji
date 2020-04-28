@@ -16,23 +16,23 @@
 			</div>
 		</div>
 		<div class="comments-container">
-			<comment
+			<message
 			v-for="comment in comments"
 			:key="comment.id"
 			:avatar="comment.avatar"
 			:username="comment.username"
 			:message="comment.message">
-			</comment>
+			</message>
 		</div>
 	</div>
 </template>
 
 <script>
-import Comment from '../components/Comment'
+import Message from '../components/Message'
 export default {
 	name: 'MessagePage',
 	components: {
-		Comment
+		Message
 	},
 	data () {
 		return {
