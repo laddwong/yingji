@@ -1,5 +1,12 @@
 # yingji
 
+## 进度
+- 完成基本页面
+- 正在进行：完成各按键功能
+
+## 预览
+![image](https://raw.githubusercontent.com/laddwong/yingji/master/src/assets/GIF%20base.gif)
+
 ## Project setup
 ```
 npm install
@@ -15,10 +22,4 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+###
