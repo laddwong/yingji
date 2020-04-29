@@ -10,6 +10,8 @@ const LoginPage = () => import('../pages/MePages/LoginPage')
 const PhotographyDetail = () => import('../pages/PhotographyDetail')
 const UserDetail = () => import('../pages/UserDetail')
 const AllCourses = () => import('../pages/AllCourses')
+const GroupPage = () => import('../pages/GroupPage')
+const ConversationPage = () => import('../pages/ConversationPage')
 
 Vue.use(VueRouter)
 
@@ -30,6 +32,10 @@ export default new VueRouter ({
 			component: AllCourses
 		},
 		{
+			path: '/discover/group',
+			component: GroupPage
+		},
+		{
 			path: '/post',
 			name: 'post',
 			component: PostPage
@@ -38,6 +44,10 @@ export default new VueRouter ({
 			path: '/message',
 			name: 'message',
 			component: MessagePage
+		},
+		{
+			path: '/message/conversation/:id',
+			component: ConversationPage
 		},
 		{
 			path: '/me',

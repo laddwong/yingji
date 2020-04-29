@@ -91,7 +91,7 @@ export default {
 				{
 					id: '13',
 					icon: 'friends-o',
-					to: '#',
+					to: '/discover/group',
 					name: '摄影小组'
 				},
 				{

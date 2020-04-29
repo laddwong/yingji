@@ -17,11 +17,12 @@
 		</div>
 		<div class="comments-container">
 			<message
-			v-for="comment in comments"
-			:key="comment.id"
-			:avatar="comment.avatar"
-			:username="comment.username"
-			:message="comment.message">
+				v-for="comment in comments"
+				:key="comment.id"
+				:id="comment.id"
+				:avatar="comment.avatar"
+				:username="comment.username"
+				:message="comment.message">
 			</message>
 		</div>
 	</div>
